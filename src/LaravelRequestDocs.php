@@ -139,8 +139,8 @@ class LaravelRequestDocs
                             throw $e;
                         }
                     }
-                    $controllersInfo[$index]['docBlock'] = $this->lrdDocComment($reflectionMethod->getDocComment());
                 }
+                $controllersInfo[$index]['docBlock'] = $this->lrdDocComment($reflectionMethod->getDocComment());
             }
         }
         return $controllersInfo;
